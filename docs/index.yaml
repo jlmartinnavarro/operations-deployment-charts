@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   apertium:
   - apiVersion: v2
-    created: "2023-09-12T11:54:58.997080048+03:00"
+    created: "2023-09-12T13:18:45.238915088+03:00"
     description: A Helm chart for Apertium on WMF Kubernetes infrastructure
-    digest: f87920d270f64394161a7ad11c50880231db4c84de1c8096a5ae3962dbc5b989
+    digest: 9ba5d66cf9891e77c3e6daef66675383f40714a417838aa4869097ef7b7dbaaf
     home: https://www.mediawiki.org/wiki/Content_translation/Machine_Translation/Apertium
     keywords:
     - apertium
@@ -23,4 +23,941 @@ entries:
     urls:
     - https://jlmartinnavarro.github.io/wikimedia/apertium-0.1.8.tgz
     version: 0.1.8
-generated: "2023-09-12T11:54:58.996048727+03:00"
+  api-gateway:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.23970862+03:00"
+    description: A Helm chart for the Envoy-based API Gateway
+    digest: f39f02205d1b7651d7f5d0a3b406091b1ef7bb15672c70a8851db2f17731980e
+    home: https://www.mediawiki.org/wiki/Core_Platform_Team/Initiatives/API_Gateway
+    keywords:
+    - api-gateway
+    - envoy
+    kubeVersion: '>=1.12'
+    maintainers:
+    - email: hnowlan@wikimedia.org
+      name: Hugh Nowlan
+    name: api-gateway
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/api-gateway-0.5.12.tgz
+    version: 0.5.12
+  benthos:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.240118987+03:00"
+    description: Benthos stream processor
+    digest: beed60daed35428f7f2ed4ce42822a0fdafdf64c7b515b34920089ddb6a567ff
+    name: benthos
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/benthos-0.0.3.tgz
+    version: 0.0.3
+  blubberoid:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.240582242+03:00"
+    description: Helm chart for Blubberoid on WMF Kubernetes infrastructure
+    digest: 824ddfe566790cd87d72794cf32be829161b6d3d5998109d6230d50dadb8f5fb
+    home: https://wikitech.wikimedia.org/wiki/Blubber
+    keywords:
+    - blubber
+    - blubberoid
+    kubeVersion: '>=1.8'
+    maintainers:
+    - email: jhuneidi@wikimedia.org
+      name: Jeena Huneidi
+    name: blubberoid
+    sources:
+    - https://gerrit.wikimedia.org/g/blubber
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/blubberoid-0.2.7.tgz
+    version: 0.2.7
+  calculator-service:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.240985347+03:00"
+    description: A Helm chart for Kubernetes
+    digest: 21e67fbe5ac01dbf6b32e5ef52ccebcf32669129a68df9b83f599595ff741bd2
+    name: calculator-service
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/calculator-service-0.1.7.tgz
+    version: 0.1.7
+  calico:
+  - apiVersion: v2
+    appVersion: 3.23.3
+    created: "2023-09-12T13:18:45.241403212+03:00"
+    description: WMF Calico setup
+    digest: d288f6cf583c295bf0b0d0463706c9a85af91cff500a47000adb5c53447431b4
+    kubeVersion: '>= 1.23'
+    name: calico
+    type: application
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/calico-0.2.10.tgz
+    version: 0.2.10
+  calico-crds:
+  - apiVersion: v2
+    appVersion: 3.23.3
+    created: "2023-09-12T13:18:45.242114404+03:00"
+    description: Calico Custom Resource Definitions
+    digest: 99cf7d0d56576b3309365e2b1a4db85cc8c1b2ca97c093aff2c9003123680909
+    name: calico-crds
+    type: application
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/calico-crds-0.2.0.tgz
+    version: 0.2.0
+  cassandra-http-gateway:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.242780614+03:00"
+    description: A generic helm chart for cassandra-based HTTP gateway applications
+    digest: 7981d106c0125143aaf7590a946fd136223b6d59be2409fd732ba028334e4f59
+    name: cassandra-http-gateway
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/cassandra-http-gateway-0.1.0.tgz
+    version: 0.1.0
+  cert-manager:
+  - apiVersion: v2
+    appVersion: 1.10.1-1
+    created: "2023-09-12T13:18:45.245390898+03:00"
+    description: A Helm chart for cert-manager
+    digest: 705af45470cecf9e620e24a772903d39b7ea36b65c6b3b0957bd11635fe8fc08
+    home: https://github.com/cert-manager/cert-manager
+    icon: https://raw.githubusercontent.com/cert-manager/cert-manager/d53c0b9270f8cd90d908460d69502694e1838f5f/logo/logo-small.png
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    kubeVersion: '>= 1.20.0-0'
+    maintainers:
+    - email: cert-manager-maintainers@googlegroups.com
+      name: cert-manager-maintainers
+      url: https://cert-manager.io
+    name: cert-manager
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/cert-manager-1.10.5.tgz
+    version: 1.10.5
+  cfssl-issuer:
+  - apiVersion: v2
+    appVersion: 0.3.0-1
+    created: "2023-09-12T13:18:45.245621452+03:00"
+    description: cert-manager issuer for CFSSL multirootca API
+    digest: 1bd3e7b0ff68f86fad3424f5aca6fa6644bef8f362be52aad73a9199d600fc95
+    name: cfssl-issuer
+    type: application
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/cfssl-issuer-0.3.3.tgz
+    version: 0.3.3
+  cfssl-issuer-crds:
+  - apiVersion: v2
+    appVersion: 0.3.0-1
+    created: "2023-09-12T13:18:45.245743471+03:00"
+    description: cfssl-issuer Custom Resource Definitions
+    digest: 17fcef7ab1225a0a9f62a30451dae35ae5882b900cb10d845c2ff740bfc5639a
+    name: cfssl-issuer-crds
+    type: application
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/cfssl-issuer-crds-0.3.0.tgz
+    version: 0.3.0
+  changeprop:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.246797944+03:00"
+    dependencies:
+    - condition: subcharts.kafka
+      name: kafka-dev
+      repository: https://helm-charts.wikimedia.org/stable/
+      version: '>= 0.1.0'
+    description: A Helm chart for changepropagation
+    digest: eb1e8c4372589f85059ded6676f8bf45415f901a1c5f515afb7560b6fe1922cf
+    home: https://www.mediawiki.org/wiki/Change_propagation
+    keywords:
+    - changeprop
+    - change-propagation
+    kubeVersion: '>=1.8'
+    maintainers:
+    - email: hknust@wikimedia.org
+      name: Holger Knust
+    name: changeprop
+    sources:
+    - https://gerrit.wikimedia.org/g/mediawiki/services/change-propagation
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/changeprop-0.11.11.tgz
+    version: 0.11.11
+  chromium-render:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.247295944+03:00"
+    description: Helm chart for Chromium Render on WMF Kubernetes infrastructure
+    digest: 845a1f83ad88ba46fd24b5f058ac227dd4fc9c3b91f0f2895be3b5833394bf62
+    home: https://www.mediawiki.org/wiki/Proton
+    keywords:
+    - PDF
+    - chromium
+    - Wikimedia
+    kubeVersion: '>=1.12'
+    maintainers:
+    - name: Wikimedia Product Infrastructure team <https://www.mediawiki.org/wiki/Wikimedia_Product/Wikimedia_Product_Infrastructure_team>
+    name: chromium-render
+    sources:
+    - https://gerrit.wikimedia.org/r/plugins/gitiles/mediawiki/services/chromium-render/
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/chromium-render-0.2.0.tgz
+    version: 0.2.0
+  citoid:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.2477823+03:00"
+    description: A Helm chart for Citoid on WMF Kubernetes infrastructure
+    digest: 7254fc688eb9286464faebe35ef16944122cd8113424bbea86ab01630ba8b5c0
+    home: https://www.mediawiki.org/wiki/Citoid
+    keywords:
+    - citation
+    - citoid
+    kubeVersion: '>=1.8'
+    maintainers:
+    - email: akosiaris@wikimedia.org
+      name: Alexandros Kosiaris
+    - email: mvolz@wikimedia.org
+      name: Marielle Volz
+    name: citoid
+    sources:
+    - https://github.com/wikimedia/citoid
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/citoid-0.3.1.tgz
+    version: 0.3.1
+  coredns:
+  - apiVersion: v2
+    appVersion: 1.8.7
+    created: "2023-09-12T13:18:45.247953276+03:00"
+    description: A coredns deployment for WMF clusters
+    digest: 3f9fabad58f58297fd7ae0a9a2ef9e181522e51d1a4b740b0bebe133e32c69f2
+    name: coredns
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/coredns-0.3.3.tgz
+    version: 0.3.3
+  cxserver:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.248606062+03:00"
+    description: A Helm chart for CXServer on WMF Kubernetes infrastructure
+    digest: be66d5d7b1ba8b0c57caa577333fc324e7ffa062657c1f4c2562277956c03155
+    home: https://www.mediawiki.org/wiki/Content_translation/cxserver
+    keywords:
+    - cxserver
+    - language
+    - translation
+    kubeVersion: '>=1.8'
+    maintainers:
+    - email: akosiaris@wikimedia.org
+      name: Alexandros Kosiaris
+    - email: kmistry@wikimedia.org
+      name: Kartik Mistry
+    name: cxserver
+    sources:
+    - https://github.com/wikimedia/mediawiki-services-cxserver
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/cxserver-0.2.2.tgz
+    version: 0.2.2
+  datahub:
+  - apiVersion: v2
+    appVersion: 0.10.4
+    created: "2023-09-12T13:18:45.251970304+03:00"
+    dependencies:
+    - condition: datahub-gms.enabled
+      name: datahub-gms
+      repository: ""
+      version: '>=0.0.1'
+    - condition: datahub-frontend.enabled
+      name: datahub-frontend
+      repository: ""
+      version: '>=0.0.1'
+    - condition: global.datahub_standalone_consumers_enabled
+      name: datahub-mae-consumer
+      repository: ""
+      version: '>=0.0.1'
+    - condition: global.datahub_standalone_consumers_enabled
+      name: datahub-mce-consumer
+      repository: ""
+      version: '>=0.0.1'
+    description: A Helm chart for DataHub at the Wikimedia Foundation
+    digest: f21f810bf8df3c6ae5c8a685b1fd47cd098ce2873995533a28451b84987ed832
+    icon: https://raw.githubusercontent.com/linkedin/datahub/master/docs-website/static/img/datahub-logo-color-mark.svg
+    maintainers:
+    - email: analytics@wikimedia.org
+      name: Wikimedia Data Engineering team
+    name: datahub
+    type: application
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/datahub-0.0.59.tgz
+    version: 0.0.59
+  developer-portal:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.252514967+03:00"
+    description: A Helm chart for Kubernetes
+    digest: 291739a42e9d22b0dbe75f6dacd55aa8458834d83a981721fc2f1d017c609906
+    maintainers:
+    - email: hi@taavi.wtf
+      name: Taavi Väänänen
+    - email: bd808@wikimedia.org
+      name: Bryan Davis
+    name: developer-portal
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/developer-portal-0.0.7.tgz
+    version: 0.0.7
+  eventgate:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.253231072+03:00"
+    dependencies:
+    - condition: subcharts.kafka
+      name: kafka-dev
+      repository: https://helm-charts.wikimedia.org/stable/
+      version: '>= 0.1.0'
+    description: 'EventGate receives JSON events over HTTP, validates them against
+      JSONSchemas, and produces them to Kafka. '
+    digest: 041d164c5e1b5a98cddec0f09885be71432fcce4c6c59c61ac3ffd6c0103b268
+    name: eventgate
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/eventgate-0.10.3.tgz
+    version: 0.10.3
+  eventrouter:
+  - apiVersion: v2
+    appVersion: "0.4"
+    created: "2023-09-12T13:18:45.253415984+03:00"
+    description: A Helm chart for eventrouter (https://github.com/heptiolabs/eventrouter)
+    digest: fca22480799837794fee0893973feda89d7b2a6dd6dff8e9bbcdc652156e6bc1
+    home: https://github.com/heptiolabs/eventrouter
+    keywords:
+    - eventrouter
+    maintainers:
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    name: eventrouter
+    sources:
+    - https://github.com/heptiolabs/eventrouter
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/eventrouter-0.4.2.tgz
+    version: 0.4.2
+  eventstreams:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.253953053+03:00"
+    description: Helm chart for eventstreams on WMF Kubernetes infrastructure
+    digest: 4abc67e4853c5067f04a704442f278986a7d4fbe958be28aba213cba7c143df8
+    home: https://wikitech.wikimedia.org/wiki/EventStreams
+    keywords:
+    - eventstreams
+    kubeVersion: '>=1.12'
+    maintainers:
+    - email: otto@wikimedia.org
+      name: Andrew Otto
+    name: eventstreams
+    sources:
+    - https://gerrit.wikimedia.org/r/plugins/gitiles/mediawiki/services/eventstreams/+/master
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/eventstreams-0.6.3.tgz
+    version: 0.6.3
+  fastapi-app:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.25445487+03:00"
+    description: A Helm chart for deploying FastAPI application on WMF Kubernetes
+    digest: 2e2e8e03a2d92efb47f36e4dab177aeb0ebe9c9bfbd9b0c9e21a9d562b838d96
+    name: fastapi-app
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/fastapi-app-0.0.12.tgz
+    version: 0.0.12
+  flink-app:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.254990147+03:00"
+    description: A Helm chart for deploying Flink applications using FlinkDeployment
+      CRD from flink-kubernetes-operator.
+    digest: 608f2545166ee5aeb2ee8a30a7eb577942c7f9103f0b7818e7809a97b8fd64a0
+    icon: https://flink.apache.org/img/logo/png/50/color_50.png
+    name: flink-app
+    type: application
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/flink-app-0.4.4.tgz
+    version: 0.4.4
+  flink-kubernetes-operator:
+  - apiVersion: v2
+    appVersion: 1.4.0
+    created: "2023-09-12T13:18:45.255451062+03:00"
+    description: A Helm chart for the Apache Flink Kubernetes Operator, modified for
+      WMF.
+    digest: bcc95ccde8d6add7e2f54c36967d452bf374ed44f9797204e45690b157be95e3
+    icon: https://flink.apache.org/img/logo/png/50/color_50.png
+    name: flink-kubernetes-operator
+    type: application
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/flink-kubernetes-operator-2.3.3.tgz
+    version: 2.3.3
+  flink-kubernetes-operator-crds:
+  - apiVersion: v2
+    appVersion: 1.4.0
+    created: "2023-09-12T13:18:45.255944594+03:00"
+    description: Flink Kubernetes Operator CRDs
+    digest: 1cb3100dafac4c74500623d88b340b804902df42b49bd984d088062cd52ee5d9
+    icon: https://flink.apache.org/img/logo/png/50/color_50.png
+    name: flink-kubernetes-operator-crds
+    type: application
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/flink-kubernetes-operator-crds-2.3.0.tgz
+    version: 2.3.0
+  flink-session-cluster:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.257109299+03:00"
+    description: Helm Chart for running Flink in session-cluster mode
+    digest: 0a377e930d5168f2a98ef96de1116ad5a4e203210a3535e027b7a9df8dec9c22
+    home: https://wikitech.wikimedia.org/w/index.php?title=Wikidata_Query_Service/Flink_On_Kubernetes#Flink_session_cluster
+    keywords:
+    - flink
+    kubeVersion: '>=1.12'
+    maintainers:
+    - email: discovery@lists.wikimedia.org
+      name: Search Platform Team
+    name: flink-session-cluster
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/flink-session-cluster-0.1.14.tgz
+    version: 0.1.14
+  function-evaluator:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.258037356+03:00"
+    description: A Helm chart for Kubernetes
+    digest: 6bac1a59cd6b19767bd2f7ea4c14cd50190dbd3e1de770cbd388f38df8728ec0
+    name: function-evaluator
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/function-evaluator-0.1.6.tgz
+    version: 0.1.6
+  function-orchestrator:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.258648518+03:00"
+    description: A Helm chart for Kubernetes
+    digest: f7d4cba4fa148a4bf3a6373a2b8d23c42011ed4e01441804c7c532755b7fcd73
+    name: function-orchestrator
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/function-orchestrator-0.1.11.tgz
+    version: 0.1.11
+  helm-state-metrics:
+  - apiVersion: v2
+    appVersion: v0.2.0
+    created: "2023-09-12T13:18:45.258808142+03:00"
+    description: helm-state-metrics chart
+    digest: a63c2448806290db86919d81d7fa358b1d5c364a2fd88ed4fa5ef7304bdb77f7
+    home: https://gerrit.wikimedia.org/r/operations/software/helm-state-metrics
+    keywords:
+    - helm
+    - prometheus-exporter
+    name: helm-state-metrics
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/helm-state-metrics-0.2.1.tgz
+    version: 0.2.1
+  ipoid:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.259538085+03:00"
+    description: Helm chart for the iPoid service
+    digest: 1fc77af48a9ab871a4fbd5adb0bb064bf2128d3660ebe9704e5fe7abd9450769
+    home: https://wikitech.wikimedia.org/wiki/IPoid
+    keywords:
+    - iPoid
+    - ipoid
+    - IP
+    - IP address
+    kubeVersion: '>=1.23'
+    maintainers:
+    - email: effie@wikimedia.org
+      name: Effie Mouzeli
+    name: ipoid
+    sources:
+    - https://gitlab.wikimedia.org/repos/mediawiki/services/ipoid
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/ipoid-0.1.3.tgz
+    version: 0.1.3
+  jaeger:
+  - apiVersion: v2
+    appVersion: 1.42.0
+    created: "2023-09-12T13:18:45.26149783+03:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.16.0
+    description: A Jaeger Helm chart for Kubernetes
+    digest: ef95969822e199ffa4fa6e3bc7feb9a38de6f8303722594222eb3f20d328ef18
+    home: https://jaegertracing.io
+    icon: https://camo.githubusercontent.com/afa87494e0753b4b1f5719a2f35aa5263859dffb/687474703a2f2f6a61656765722e72656164746865646f63732e696f2f656e2f6c61746573742f696d616765732f6a61656765722d766563746f722e737667
+    keywords:
+    - jaeger
+    - opentracing
+    - tracing
+    - instrumentation
+    kubeVersion: '>= 1.21-0'
+    maintainers:
+    - email: david.vonthenen@dell.com
+      name: dvonthenen
+    - email: ankit.mehta@appian.com
+      name: mehta-ankit
+    - email: michael.lorant@fairfaxmedia.com.au
+      name: mikelorant
+    - email: naseem@transit.app
+      name: naseemkullah
+    - email: me@pavelnikolov.net
+      name: pavelnikolov
+    name: jaeger
+    sources:
+    - https://hub.docker.com/u/jaegertracing/
+    type: application
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/jaeger-0.69.3.tgz
+    version: 0.69.3
+  kafka-dev:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.261640385+03:00"
+    description: 'A Helm chart for installing a single node Kafka (and Zookeeper)
+      pod for development and testing purposes. '
+    digest: 1a28e467d7cdb3efce5b8d178e2f9f9e33301feee6a77636726ef90411b03479
+    name: kafka-dev
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/kafka-dev-0.2.0.tgz
+    version: 0.2.0
+  kask:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.262524677+03:00"
+    dependencies:
+    - condition: subcharts.cassandra
+      name: cassandra
+      repository: https://charts.helm.sh/incubator
+      version: '>= 0.11.1'
+    description: Helm chart for Kask on WMF Kubernetes infrastructure
+    digest: 52c78bf9f277d5901d4e030fec318d065a09dc05caf2647b3721842f7695ad8b
+    home: https://www.mediawiki.org/wiki/Kask
+    keywords:
+    - session
+    - store
+    kubeVersion: '>=1.8'
+    maintainers:
+    - email: eevans@wikimedia.org
+      name: Eric Evants
+    - email: candrew@wikimedia.org
+      name: Clara Andrew-Wani
+    - email: akosiaris@wikimedia.org
+      name: Alexandros Kosiaris
+    name: kask
+    sources:
+    - https://gitlab.wikimedia.org/repos/mediawiki/services/kask
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/kask-0.1.4.tgz
+    version: 0.1.4
+  knative-serving:
+  - apiVersion: v2
+    appVersion: v1.7.2
+    created: "2023-09-12T13:18:45.264562161+03:00"
+    description: WMF Knative Serving setup
+    digest: 2414eeeef1f0193433de142ed8a8a672a374767bd87b7eeb141f35f737d3c8f1
+    name: knative-serving
+    type: application
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/knative-serving-0.2.20.tgz
+    version: 0.2.20
+  knative-serving-crds:
+  - apiVersion: v2
+    appVersion: v1.7.2
+    created: "2023-09-12T13:18:45.265736092+03:00"
+    description: Knative Serving Custom Resource Definitions
+    digest: 072eb73890c11b1c3623acb6c3ef3c1729d1296b6c51068cf9b8993f4397f960
+    name: knative-serving-crds
+    type: application
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/knative-serving-crds-0.2.0.tgz
+    version: 0.2.0
+  kserve:
+  - apiVersion: v2
+    appVersion: 0.10.0
+    created: "2023-09-12T13:18:45.266897498+03:00"
+    description: WMF KServe setup
+    digest: b323eaaa0f66fa581111c92d9e3cbf4ad379ae54b6ce6f652107c15939397f38
+    name: kserve
+    type: application
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/kserve-0.1.18.tgz
+    version: 0.1.18
+  kserve-inference:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-09-12T13:18:45.267141649+03:00"
+    description: WMF KServe Inference serv
+    digest: fba1d53e39c0ec58d1ee9fadfbb69468a2472313a529a65f15052257c8bbd51b
+    name: kserve-inference
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/kserve-inference-0.4.4.tgz
+    version: 0.4.4
+  linkrecommendation:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.267910244+03:00"
+    description: A Helm chart for the Link Recommendation Service on WMF Kubernetes.
+    digest: 66d88fd019328e9f8136a1d17c7dc0532ad3217e212fb2ad8d5ebfe414039e67
+    home: https://wikitech.wikimedia.org/wiki/Add_Link
+    kubeVersion: '>=1.12'
+    maintainers:
+    - name: Wikimedia Foundation Growth team <https://www.mediawiki.org/wiki/Growth>
+    name: linkrecommendation
+    sources:
+    - https://gerrit.wikimedia.org/r/plugins/gitiles/research/mwaddlink/
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/linkrecommendation-0.2.15.tgz
+    version: 0.2.15
+  machinetranslation:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.269096388+03:00"
+    description: A Helm chart for machinetranslation service on WMF Kubernetes infrastructure
+    digest: dfdc2e22dc48d7d005c44686b2ce0b1bb6cbd2d10c034c0c9661bddbd9f56483
+    home: https://www.mediawiki.org/wiki/Content_translation/Machine_Translation/MinT
+    keywords:
+    - machinetranslation
+    - language
+    kubeVersion: '>=1.23'
+    maintainers:
+    - email: akosiaris@wikimedia.org
+      name: Alexandros Kosiaris
+    - email: kartik.mistry@gmail.com
+      name: Kartik Mistry
+    - email: santhosh.thottingal@gmail.com
+      name: Santhosh Thottingal
+    name: machinetranslation
+    sources:
+    - https://gerrit.wikimedia.org/g/mediawiki/services/machinetranslation
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/machinetranslation-0.0.12.tgz
+    version: 0.0.12
+  mathoid:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.269597569+03:00"
+    description: Helm chart for Mathoid on WMF Kubernetes infrastructure
+    digest: 767b32ce2bd4cc7c4ed767a1e401c1e1a39e7a05bbd3e3794cf9fa79f253fede
+    home: https://www.mediawiki.org/wiki/Manual:Mathoid
+    keywords:
+    - math
+    - mathoid
+    kubeVersion: '>=1.16'
+    maintainers:
+    - email: akosiaris@wikimedia.org
+      name: Alexandros Kosiaris
+    name: mathoid
+    sources:
+    - https://github.com/wikimedia/mathoid
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/mathoid-0.1.9.tgz
+    version: 0.1.9
+  mediawiki:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.270881492+03:00"
+    description: A Helm chart for running MediaWiki on Kubernetes
+    digest: 78640917acd2db5c4feb7b6031f0e99f2ead3d52ab14ffa172e391683ea50ab0
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/MediaWiki-2020-logo.svg/270px-MediaWiki-2020-logo.svg.png
+    name: mediawiki
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/mediawiki-0.6.9.tgz
+    version: 0.6.9
+  mediawiki-dev:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.271349008+03:00"
+    description: A Helm chart for Mediawiki core in a development environment
+    digest: 26c542d7c84c010ccfa573da98d772b7bc8c070474e6a23642240cc4eac733dc
+    home: https://www.mediawiki.org/wiki/Manual:System_administration
+    keywords:
+    - mediawiki
+    - core
+    maintainers:
+    - email: jhuneidi@wikimedia.org
+      name: Jeena Huneidi
+    name: mediawiki-dev
+    sources:
+    - https://gerrit.wikimedia.org/r/plugins/gitiles/operations/deployment-charts/+/refs/heads/master/charts/mediawiki-dev/
+    - https://gerrit.wikimedia.org/r/plugins/gitiles/mediawiki/core/+/refs/heads/master/.pipeline/blubber.yaml
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/mediawiki-dev-0.4.4.tgz
+    version: 0.4.4
+  miscweb:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.271861991+03:00"
+    description: A Helm chart for a webserver for miscellaneous static sites on Kubernetes
+    digest: f3990bc2a8868031094eea5b8a5d3c909b5775d86e66959faa1f8d0a83dc58b1
+    home: https://wikitech.wikimedia.org/wiki/Miscweb1002
+    keywords:
+    - miscweb
+    - miscellaneous
+    - webserver
+    - static
+    - sites
+    - html
+    - apache
+    - httpd
+    maintainers:
+    - email: dzahn@wikimedia.org
+      name: Daniel Zahn
+    name: miscweb
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/miscweb-0.2.10.tgz
+    version: 0.2.10
+  mobileapps:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.272349119+03:00"
+    description: Helm chart for the Page Content Service (mobileapps) on WMF Kubernetes
+      infrastructure
+    digest: b3345e3655d1bcf6a3273edc7381f74289f8d7efc7d9947be691fc947f2e72f1
+    home: https://www.mediawiki.org/wiki/Wikimedia_Apps/Team/RESTBase_services_for_apps
+    keywords:
+    - mobile
+    - page content
+    - Wikimedia
+    kubeVersion: '>=1.12'
+    maintainers:
+    - name: Wikimedia Product Infrastructure team <https://www.mediawiki.org/wiki/Wikimedia_Product/Wikimedia_Product_Infrastructure_team>
+    name: mobileapps
+    sources:
+    - https://gerrit.wikimedia.org/r/plugins/gitiles/mediawiki/services/mobileapps/
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/mobileapps-0.1.12.tgz
+    version: 0.1.12
+  opentelemetry-collector:
+  - apiVersion: v2
+    appVersion: 0.81.0
+    created: "2023-09-12T13:18:45.273355496+03:00"
+    description: OpenTelemetry Collector Helm chart for Kubernetes
+    digest: 72571e697ddcab02895e9412b801ff3e5782b3461dfeb996409d1c10583822da
+    home: https://opentelemetry.io/
+    icon: https://opentelemetry.io/img/logos/opentelemetry-logo-nav.png
+    maintainers:
+    - name: dmitryax
+    - name: TylerHelmuth
+    name: opentelemetry-collector
+    sources:
+    - https://github.com/open-telemetry/opentelemetry-collector
+    - https://github.com/open-telemetry/opentelemetry-collector-contrib
+    type: application
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/opentelemetry-collector-0.62.4.tgz
+    version: 0.62.4
+  push-notifications:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.273944791+03:00"
+    description: Helm chart for the Push Notifications Service on WMF Kubernetes infrastructure
+    digest: 6ddcfc07236c64b0e6b02ab60761c072dae14d139c9a1ab04e3d7ead533f7612
+    home: https://www.mediawiki.org/wiki/Wikimedia_Product_Infrastructure_team/Push_Notifications_Infrastructure
+    keywords:
+    - mobile
+    - push
+    - notifications
+    - Wikimedia
+    kubeVersion: '>=1.12'
+    maintainers:
+    - name: Wikimedia Product Infrastructure team <https://www.mediawiki.org/wiki/Wikimedia_Product/Wikimedia_Product_Infrastructure_team>
+    name: push-notifications
+    sources:
+    - https://gerrit.wikimedia.org/r/plugins/gitiles/mediawiki/services/push-notifications/
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/push-notifications-0.1.9.tgz
+    version: 0.1.9
+  python-webapp:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.274521212+03:00"
+    description: A Helm chart for deploying Python-based web-applications on WMF Kubernetes
+    digest: 5ee373949ef7a4ddcb02faa551809cf1583f2e59af78a823520e496fd19a11fd
+    name: python-webapp
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/python-webapp-0.0.2.tgz
+    version: 0.0.2
+  raw:
+  - apiVersion: v2
+    appVersion: 0.2.3
+    created: "2023-09-12T13:18:45.274658207+03:00"
+    description: A place for all the Kubernetes resources which don't already have
+      a home.
+    digest: fe61899f2514323fd4c45a7865d6caf2e020478fcd162a63dcaa86417895c2e5
+    home: https://github.com/helm/charts/blob/master/incubator/raw
+    name: raw
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/raw-0.3.0.tgz
+    version: 0.3.0
+  recommendation-api:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.27555668+03:00"
+    description: Helm chart for Recommendation API on WMF Kubernetes infrastructure
+    digest: 8a2485be7a68adf7c6280988fac57e32f67a55e99c34e08e545a8d01f610518f
+    keywords:
+    - recommendation-api
+    kubeVersion: '>=1.12'
+    maintainers:
+    - email: bmansurov@wikimedia.org
+      name: Research Team
+    name: recommendation-api
+    sources:
+    - https://gerrit.wikimedia.org/g/mediawiki/services/recommendation-api
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/recommendation-api-0.1.9.tgz
+    version: 0.1.9
+  secrets:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-09-12T13:18:45.275932762+03:00"
+    description: WMF chart to create Secret(s) in namespaces
+    digest: 529d3bfab22c565448e7f64326323d386a96dd5e7f90a43ee77aa035596d16c8
+    name: secrets
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/secrets-0.1.3.tgz
+    version: 0.1.3
+  shellbox:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.276783096+03:00"
+    description: A Helm chart for Kubernetes
+    digest: 2bc101f8fdadcf7694479d1a44cc424e95ee6dc4f85a182805559934c4561c57
+    home: https://www.mediawiki.org/wiki/Shellbox
+    icon: https://upload.wikimedia.org/wikipedia/commons/6/6f/Shellbox_logo.png
+    keywords:
+    - shellbox
+    - mediawiki
+    - score
+    - lilypond
+    maintainers:
+    - email: legoktm@wikimedia.org
+      name: Kunal Mehta
+    name: shellbox
+    sources:
+    - https://gerrit.wikimedia.org/g/mediawiki/libs/Shellbox
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/shellbox-1.1.3.tgz
+    version: 1.1.3
+  similar-users:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.277212699+03:00"
+    description: A helm chart for the similar-users API service
+    digest: cb80ab5261714e3ee7d43f26d0ef1adbfb3701c2dbdd0b12325d891d5a133756
+    home: https://wikitech.wikimedia.org/wiki/Similarusers
+    keywords:
+    - similarusers
+    - sockpuppet
+    - aht
+    kubeVersion: '>=1.12'
+    maintainers:
+    - email: hnowlan@wikimedia.org
+      name: Hugh Nowlan
+    name: similar-users
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/similar-users-0.1.8.tgz
+    version: 0.1.8
+  spark-operator:
+  - apiVersion: v2
+    appVersion: 1.3.7-3.3.0-4
+    created: "2023-09-12T13:18:45.278008362+03:00"
+    description: A Helm chart for the Spark on Kubernetes operator
+    digest: bea615f1113c3d942d07b2fbbd945be9cad0d2424a42399bc3c031747fb75ada
+    name: spark-operator
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/spark-operator-0.0.14.tgz
+    version: 0.0.14
+  tegola-vector-tiles:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.27853505+03:00"
+    description: Helm chart for the maps vector tile server in WMF
+    digest: 7a0597402ed868eaa4e49a328d0d8db255f0317e90cf59e13c3dd91db08953da
+    home: https://wikitech.wikimedia.org/wiki/Maps
+    keywords:
+    - maps
+    - vector-tiles
+    - vector-server
+    - tegola
+    kubeVersion: '>=1.16'
+    maintainers:
+    - name: Wikimedia Product Infrastructure team <https://www.mediawiki.org/wiki/Wikimedia_Product/Wikimedia_Product_Infrastructure_team>
+    name: tegola-vector-tiles
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/tegola-vector-tiles-0.1.9.tgz
+    version: 0.1.9
+  termbox:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.279053636+03:00"
+    description: Helm chart for Wikibase Termbox SSR on WMF Kubernetes infrastructure
+    digest: 415eba680d2135f743efca368ea6e3e8d7b7f04072b878e3b0d4c728fd874c4f
+    home: https://wikitech.wikimedia.org/wiki/WMDE/Wikidata/SSR_Service
+    keywords:
+    - wikidata
+    - ssr
+    - termbox
+    kubeVersion: '>=1.8'
+    maintainers:
+    - email: akosiaris@wikimedia.org
+      name: Alexandros Kosiaris
+    - email: thomas.arrow_ext@wikimedia.de
+      name: Thomas Arrow
+    - email: leszek.manicki@wikimedia.de
+      name: Leszek Manicki
+    name: termbox
+    sources:
+    - https://gerrit.wikimedia.org/g/wikibase/termbox/
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/termbox-0.1.8.tgz
+    version: 0.1.8
+  thumbor:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.280105729+03:00"
+    description: Thumbor image conversion service
+    digest: df7079fcabab0b8bba89d130693d527a0beda19355af0981cc684e07c06f6543
+    name: thumbor
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/thumbor-0.4.1.tgz
+    version: 0.4.1
+  toolhub:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.283072351+03:00"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 6.8.18
+    description: Helm chart for Toolhub, a catalog of Wikimedia tools
+    digest: 6863c4a563ce794d49f4c99b9e004bf9def1540d25d34ce35dcc1dc86e9551cd
+    home: https://meta.wikimedia.org/wiki/Toolhub
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Toolhub_community_logo.svg/240px-Toolhub_community_logo.svg.png
+    maintainers:
+    - email: bd808@wikimedia.org
+      name: Bryan Davis
+      url: https://wikitech.wikimedia.org/wiki/User:BryanDavis
+    name: toolhub
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/toolhub-1.1.11.tgz
+    version: 1.1.11
+  wikifeeds:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.283745017+03:00"
+    description: A Helm chart for Kubernetes
+    digest: eee312dbc914ca477c79cba097be64dc471b80afffff79a68c9657f0204a445e
+    home: https://phabricator.wikimedia.org/tag/wikifeeds
+    keywords:
+    - REST
+    - API
+    - node service
+    - mobile apps
+    - MediaWiki
+    - Wikipedia
+    kubeVersion: '>=1.8'
+    maintainers:
+    - name: Wikimedia Product Infrastructure team <https://www.mediawiki.org/wiki/Wikimedia_Product/Wikimedia_Product_Infrastructure_team>
+    name: wikifeeds
+    sources:
+    - https://gerrit.wikimedia.org/r/plugins/gitiles/mediawiki/services/wikifeeds/
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/wikifeeds-0.1.9.tgz
+    version: 0.1.9
+  zotero:
+  - apiVersion: v2
+    created: "2023-09-12T13:18:45.284224114+03:00"
+    description: A Helm chart for Kubernetes used to deploy the zotero-translation
+      server
+    digest: 597ecdcd6dd177646fbac0652f7a944c1b0fde25eb0a6dced06f94ebb1922fac
+    home: https://www.zotero.org/
+    keywords:
+    - citation
+    - citoid
+    - zotero
+    kubeVersion: '>=1.8'
+    maintainers:
+    - email: akosiaris@wikimedia.org
+      name: Alexandros Kosiaris
+    name: zotero
+    sources:
+    - https://github.com/zotero/translation-server
+    - https://github.com/zotero/zotero/
+    - https://github.com/zotero/translators/
+    urls:
+    - https://jlmartinnavarro.github.io/wikimedia/zotero-0.2.6.tgz
+    version: 0.2.6
+generated: "2023-09-12T13:18:45.23811466+03:00"

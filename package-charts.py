@@ -9,6 +9,5 @@ for name in onlyfolder:
     package = f"helm package charts/{name}/ -d docs/"
     os.system(package)
 
-os.system("git add .; git commit -m 'add packages'; git push")
-
 os.system("helm repo index ./docs --url https://jlmartinnavarro.github.io/wikimedia")
+os.system("git add .; git commit -m 'add packages'; git push")
